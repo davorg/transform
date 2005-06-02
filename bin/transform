@@ -1,0 +1,18 @@
+#!/usr/bin/perl
+
+use strict; 
+use warnings;
+
+use Getopt::Std;
+use Transform;
+
+my %opts; 
+(getopts('f:', \%opts) && @ARGV) 
+  || die "usage: transform.pl -f h|p|t xml_file\n"; 
+
+die "Invalid format: $opts{f}\n" unless exists $xformats{$opts{f}}; 
+
+my $xform = Transform->new(type => $xformats{$opts{f}},
+                           file => shift);
+
+print $xform->process;
