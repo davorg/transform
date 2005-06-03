@@ -5,11 +5,12 @@ use warnings;
 
 use XML::Parser;
 
-use vars qw(%xformats);
+our %xformats;
 
 require Exporter;
 our @ISA = qw(Exporter);
 our @EXPORT = qw(%xformats);
+our $VERSION = sprintf "%d.%02d", '$Revision$ ' =~ /(\d+)\.(\d+)/;
 
 %xformats= (h => 'html',
             p => 'pod',
