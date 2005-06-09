@@ -5,6 +5,7 @@ my $build = Module::Build->new(
     license           => 'perl',
     dist_author       => 'Dave Cross <dave@dave.org.uk>',
     script_files      => ['bin/transform'],
+    sign              => 1,
     create_makefile   => 'traditional',
 );
 

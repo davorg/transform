@@ -6,3 +6,4 @@ README
 t/Transform.t
 lib/Transform.pm
 bin/transform
+META.yml
