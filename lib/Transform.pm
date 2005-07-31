@@ -213,7 +213,7 @@ sub top {
   my $self = shift;
   my $tree = $self->{tree};
 
-  return "\n", $tree->[1]->[4]->[2], "\n" .
+  return "\n" . $tree->[1]->[4]->[2] . "\n" .
     '-' x length($tree->[1]->[4]->[2]) . "\n\n";
 }
 
