@@ -10,7 +10,6 @@ our %xformats;
 require Exporter;
 our @ISA = qw(Exporter);
 our @EXPORT = qw(%xformats);
-our $VERSION = sprintf '%d', '$Revision$ ' =~ /(\d+)/;
 
 %xformats= (h => 'html',
             p => 'pod',
